@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les formulaires</h1>
+    <hr>
+    <h2>Les entrées (input)</h2>
+
+    <form action="/utilisateurs/creer" method="POST">
+        <label for="nom">Nom</label> <br>
+        <input type="text" id="nom" name="nom" value="">
+
+        <br><br>
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="prenom"  name="prenom" value="">
+
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email"  name="email" value="">
+
+        <br><br>
+        <label for="pass">Mot de passe</label><br>
+        <input type="password" id="pass"  name="pass" value="">
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <h2>Les checkbox</h2>
+
+    <label for="voiture_1">Toyota</label>
+    <input type="checkbox" id="voiture_1" name="toyota" value="toyota">
+
+    <label for="voiture_2">Peugeot</label>
+    <input type="checkbox" id="voiture_2" name="peugeot" value="peugeot">
+
+    <label for="voiture_3">Audi</label>
+    <input type="checkbox" id="voiture_3" name="audi" value="audi">
+
+    <h2>Radio</h2>
+
+    <label for="banane">Banane</label>
+    <input type="radio" id="banane" name="fruits" value="banane">
+
+    <label for="orange">Orange</label>
+    <input type="radio" id="orange" name="fruits" value="orange">
+
+    <label for="mangue">Mangue</label>
+    <input type="radio" id="mangue" name="fruits" value="mangue">
+</body>
+</html>

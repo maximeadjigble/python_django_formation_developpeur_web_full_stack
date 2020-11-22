@@ -1,0 +1,56 @@
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #00ADE6;
+    color: white;
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.logo .nombre {
+    font-size: 22px;
+    position: absolute;
+    top: 12px;
+}
+
+
+.site-nav-bar {
+    background-color: #00A7E3;
+}
+
+.nav .nav-item a {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-highlight {
+    background-color: #4DC2EB;
+    margin: 0.5rem 0.5rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+}
+
+.site-info {
+    background-color: #000145;
+    color: white;
+    padding: 5px 0px;
+}
+
+.info-continu-titre {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 22px;
+}
+
+.info-continu{
+    background-color: #EEEEEE;
+}
+
+.info-heure {
+    background-color: #00A7E3;
+    color: white;
+    padding: 5px;
+} 

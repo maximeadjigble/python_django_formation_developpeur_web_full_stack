@@ -1,0 +1,46 @@
+.container {
+    border: 1px solid black;
+}
+
+.container-fluid {
+    border: 1px solid red;
+}
+
+.col-8, .col-4 {
+    border: 2px dashed green;
+}
+
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #00ADE6;
+    color: white;
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.logo .nombre {
+    font-size: 22px;
+    position: absolute;
+    top: 12px;
+}
+
+
+.site-nav-bar {
+    background-color: #00A7E3;
+}
+
+.nav .nav-item a {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-highlight {
+    background-color: #4DC2EB;
+    margin: 0.5rem 0.5rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+}

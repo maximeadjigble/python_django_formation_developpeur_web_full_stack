@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+#conteneur {
+    width: 400px;
+    margin: 0px auto;
+}
