@@ -1,0 +1,75 @@
+{%  extends 'template_base.html' %}
+{% load static %}
+
+{% block titre %}Page d'accueil{% endblock%}
+
+{% block contenu %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">Voyages</h1>
+        <p class="lead text-muted">
+            Voyager c'est ma vie! Je vais vous faire découvrir mes destinations
+            favorites à travers ce blog.
+        </p>
+        <a href="{% url 'articles:articles' %}" type="button" class="btn btn-primary">
+            Articles
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg mb-4">
+            <img class="w-100" src="{% get_media_prefix %}voyages.jpg" alt="Image de blog">
+        </div>
+        <div class="col-lg text-justify">
+            <h2>Mes Aventures</h2>
+            <hr class="my-4">
+            <p class="lead">
+                Bienvenue sur mon blog de voyage.
+                Chaque année, je découvre une nouvelle ville en recherche
+                de délices culinaires et d'aventures. A travers ce blog,
+                je partage ma passion pour l'exploration et vous fait découvrir
+                des villes du monde dans toute leur splendeur.
+            </p>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fas fa-hiking fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Randonnée</h2>
+            <p>
+                A pieds, c'est encore mieux! Explorer des endroits
+                où très peu de personnes n'osent s'aventurer.
+            </p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fas fa-utensils fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Dégustation</h2>
+            <p>
+                Aller à la découverte de nouvelles saveures. 
+                Des menus en couleur et épicés par des saveures à couper le souffle.
+            </p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fas fa-route fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Découverte</h2>
+            <p>
+                Des falaises, des caves, 
+                des plages à sable blanc s'étendant sur des kilomètres.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

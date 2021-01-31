@@ -1,0 +1,30 @@
+{%  extends 'template_base.html' %}
+
+{% block titre %}Page d'accueil{% endblock%}
+
+{% block contenu %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">Voyages</h1>
+        <p class="lead text-muted">
+            Voyager c'est ma vie! Je vais vous faire découvrir mes destinations
+            favorites à travers ce blog.
+        </p>
+        <a href="{% url 'articles:articles' %}" type="button" class="btn btn-primary">
+            Articles
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <hr>
+    <div>
+        Informations sur notre blog
+    </div>
+    <hr>
+    <div>
+        Icônes
+    </div>
+</div>
+
+{% endblock %}

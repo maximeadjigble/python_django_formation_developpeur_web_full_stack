@@ -1,0 +1,13 @@
+{%  extends 'template_base.html' %}
+
+{% block titre %}Page d'articles{% endblock%}
+
+{% block contenu %}
+    <h1>Les articles</h1>
+
+    {% for article in articles %}
+        <h2>{{ article.titre }}</h2>
+        <p>{{ article.contenu }}</p>
+        <span>{{ article.date_publication }}</span>
+    {% endfor %}
+{% endblock %}

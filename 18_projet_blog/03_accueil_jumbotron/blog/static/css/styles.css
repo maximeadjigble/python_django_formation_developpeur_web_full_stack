@@ -1,0 +1,8 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+    /* https://www.w3schools.com/cssref/css_units.asp */
+}

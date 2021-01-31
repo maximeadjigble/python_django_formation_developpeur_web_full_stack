@@ -1,0 +1,29 @@
+{%  extends 'template_base.html' %}
+
+{% block titre %}Page d'articles{% endblock%}
+
+{% block contenu %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-11">
+            <h1>Liste d'articles</h1>
+        </div>
+        <div class="col-lg-1">
+            <a class="btn btn-primary" href="{% url 'articles:creer' %}">
+                Créer
+            </a>
+        </div>
+    </div>
+</div>
+
+<hr class="my-4">
+
+<div class="container">
+    {% for article in articles %}
+    <h2><a href="{% url 'articles:article' slug=article.slug %}">{{ article.titre }}</a></h2>
+    <img src="{{ article.image.url }}" alt="{{ article.titre }}">
+    <p>{{ article.contenu }}</p>
+    <span>{{ article.date_publication }}</span>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titre %}{% endblock%}</title>
+</head>
+<body>
+    <ul style="list-style: none">
+        <li style="display: inline-block; padding: 10px 20px;">
+            <!-- Changement -->
+            <a href="{% url 'home' %}">Accueil</a>
+        </li>
+        <li style="display: inline-block; padding: 10px 20px;">
+            <a href="{% url 'articles:articles' %}">Articles</a>
+        </li>
+        <li style="display: inline-block; padding: 10px 20px;">
+            <a href="{% url 'contact' %}">Contact</a>
+        </li>
+    </ul>
+
+    {% block contenu %} {% endblock %}
+</body>
+</html>

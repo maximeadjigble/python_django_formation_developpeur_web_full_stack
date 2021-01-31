@@ -1,0 +1,19 @@
+{%  extends 'template_base.html' %}
+
+{% block titre %}Page de contact{% endblock%}
+
+{% block contenu %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 mt-4">
+            <h1>Contactez-nous</h1>
+            <hr class="my-4">
+            <form action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-danger">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

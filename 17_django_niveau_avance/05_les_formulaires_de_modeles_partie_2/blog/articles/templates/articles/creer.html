@@ -1,0 +1,9 @@
+{%  extends 'template_base.html' %}
+
+{% block contenu %}
+    <form action="{% url 'articles:creer' %}" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-danger">Créer</button>
+    </form>
+{% endblock %}
